@@ -5,8 +5,8 @@ import {
   Copy, ExternalLink, ChevronDown, AlertCircle, Sparkles,
   Play, RotateCcw, Plus, Filter, Zap, Cpu, HardDrive,
   ArrowRight, Lock, Eye, EyeOff, Box, Layers, Server,
-  CircleDot, Rocket, Moon, Sun, Menu, MoreHorizontal,
-  CheckCircle2, XCircle, FileCode, Folder, ShieldCheck
+  Circle, Rocket, Moon, Sun, Menu, MoreHorizontal,
+CheckCircle, XCircle, FileCode, Folder, Shield
 } from 'lucide-react';
 
 /* =========================================================
@@ -157,7 +157,7 @@ const SideNav = ({ active, onChange }) => {
     { id: 'deploys', icon: <Rocket size={15}/>, label: 'Deployments', active: true },
     { id: 'domains', icon: <Layers size={15}/>, label: 'Domains' },
     { id: 'email', icon: <Box size={15}/>, label: 'Email' },
-    { id: 'billing', icon: <CircleDot size={15}/>, label: 'Billing' },
+    { id: 'billing', icon: <Circle size={15}/>, label: 'Billing' },
   ];
   return (
     <div style={{
@@ -273,7 +273,7 @@ const EmptyState = ({ onStart }) => (
           {[
             { icon: <Zap size={14}/>, title: 'Zero config', body: 'Auto-detect Next.js, Astro, Vite, Node, and more.' },
             { icon: <RotateCcw size={14}/>, title: 'Instant rollback', body: 'Every deploy is immutable. Roll back in one click.' },
-            { icon: <ShieldCheck size={14}/>, title: 'Real hosting', body: 'Long-running runtimes. No cold starts. Bundled with your plan.' },
+            { icon: <Shield size={14}/>, title: 'Real hosting', body: 'Long-running runtimes. No cold starts. Bundled with your plan.' },
           ].map((f, i) => (
             <div key={i}>
               <div style={{ color: COLORS.brand, marginBottom: 8 }}>{f.icon}</div>
