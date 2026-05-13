@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import {
-  Github, ChevronRight, Search, Check, X, Loader2, GitBranch,
+  GitHub, ChevronRight, Search, Check, X, Loader2, GitBranch,
   Globe, Terminal, Settings, Clock, Activity, ArrowLeft,
   Copy, ExternalLink, ChevronDown, AlertCircle, Sparkles,
   Play, RotateCcw, Plus, Filter, Zap, Cpu, HardDrive,
